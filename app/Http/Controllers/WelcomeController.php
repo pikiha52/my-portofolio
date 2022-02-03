@@ -11,9 +11,19 @@ class WelcomeController extends Controller
         return view('home');
     }
 
-    public function portofolio()
+    public function porto()
     {
         return view('porto');
+    }
+
+    public function detail_porto()
+    {
+        return view('details-porto');
+    }
+
+    public function curriculum_vitae()
+    {
+        return view('curriculum');
     }
 
 }

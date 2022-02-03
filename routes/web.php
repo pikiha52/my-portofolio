@@ -15,5 +15,5 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', [WelcomeController::class, 'index'])->name('/');
-Route::get('/porto', [WelcomeController::class, 'porto'])->name('/my-projects');
-Route::get('/cv', [WelcomeController::class, 'curriculum_vitae'])->name('/my-cv');
+Route::get('/porto', [WelcomeController::class, 'porto'])->name('my-projects');
+Route::get('/cv', [WelcomeController::class, 'curriculum_vitae'])->name('my-cv');
