@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Portofolio;
 use Illuminate\Http\Request;
 
 class WelcomeController extends Controller
@@ -13,7 +14,8 @@ class WelcomeController extends Controller
 
     public function porto()
     {
-        return view('porto');
+        $portofolio = Portofolio::with('details')->get();
+        return view('porto', compact('portofolio'));
     }
 
     public function detail_porto()

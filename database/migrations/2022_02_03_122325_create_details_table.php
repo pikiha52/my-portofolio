@@ -15,9 +15,10 @@ class CreateDetailsTable extends Migration
     {
         Schema::create('details', function (Blueprint $table) {
             $table->id();
-            $table->integer('portofolios_id');
+            $table->unsignedBigInteger('portofolio_id');
             $table->string('image');
             $table->timestamps();
+            $table->foreign('portofolios_id')->references('id')->on('portofolios');
         });
     }
 
