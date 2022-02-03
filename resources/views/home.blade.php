@@ -20,25 +20,25 @@
     </div>
 </div>
 
-<div class="flex justify-center py-4">
-    <p class="font-poppins text-3xl text-gray-400">My Project</p>
+<div class="flex justify-center py-6">
+    <p class="font-poppins text-2xl text-gray-600 uppercase font-extrabold leading-4">My Project</p>
 </div>
 
 <div class="grid grid-cols-3 gap-4">
 
         <div class="relative bg-cyan-500 shadow-md rounded-md w-full">
             <img src="https://gosystemconsulting.co.id/media/HiRes-17.jpg" class="rounded-md" alt="">
-            <div class="absolute w-full h-full rounded-md py-2.5 bottom-0 inset-x-0 hover:bg-gray-300 hover:bg-opacity-50 text-transparent text-2xl hover:text-gray-700 flex justify-center items-center text-center leading-4">project name</div>
+            <div class="absolute w-full h-full rounded-md py-2.5 bottom-0 inset-x-0 hover:bg-gray-300 hover:bg-opacity-50 text-transparent font-extrabold text-2xl hover:text-gray-700 flex justify-center items-center text-center leading-4 uppercase">project name</div>
         </div>
   
         <div class="relative bg-cyan-500 shadow-md rounded-md w-full">
             <img src="https://gosystemconsulting.co.id/media/HiRes-17.jpg" class="rounded-md" alt="">
-            <div class="absolute w-full h-full rounded-md py-2.5 bottom-0 inset-x-0 hover:bg-gray-300 hover:bg-opacity-50 text-transparent text-2xl hover:text-gray-700 flex justify-center items-center text-center leading-4">project name</div>
+            <div class="absolute w-full h-full rounded-md py-2.5 bottom-0 inset-x-0 hover:bg-gray-300 hover:bg-opacity-50 text-transparent font-extrabold text-2xl hover:text-gray-700 flex justify-center items-center text-center leading-4 uppercase">project name</div>
         </div>
   
         <div class="relative bg-cyan-500 shadow-md rounded-md w-full">
             <img src="https://gosystemconsulting.co.id/media/HiRes-17.jpg" class="rounded-md" alt="">
-            <div class="absolute w-full h-full rounded-md py-2.5 bottom-0 inset-x-0 hover:bg-gray-300 hover:bg-opacity-50 text-transparent text-2xl hover:text-gray-700 flex justify-center items-center text-center leading-4">project name</div>
+            <div class="absolute w-full h-full rounded-md py-2.5 bottom-0 inset-x-0 hover:bg-gray-300 hover:bg-opacity-50 text-transparent font-extrabold text-2xl hover:text-gray-700 flex justify-center items-center text-center leading-4 uppercase">project name</div>
         </div>
   
 </div>

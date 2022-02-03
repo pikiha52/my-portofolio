@@ -14,13 +14,22 @@ class WelcomeController extends Controller
 
     public function porto()
     {
-        $portofolio = Portofolio::with('details')->get();
-        return view('porto', compact('portofolio'));
+        return view('porto');
     }
 
-    public function detail_porto()
+    public function detail_porto($id)
     {
-        return view('details-porto');
+        $portofolio = Portofolio::find($id);
+        
+        if (empty($portofolio)) {
+            return route('/');
+        }
+
+        $details = $portofolio->with('details')->whereHas('details', function($query) use($id) {
+            $query->where('portofolio_id', $id);
+        })->get();
+
+        return view('details-porto', compact('portofolio', 'details'));
     }
 
     public function curriculum_vitae()
