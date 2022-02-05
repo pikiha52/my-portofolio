@@ -25,11 +25,11 @@ class WelcomeController extends Controller
             return route('/');
         }
 
-        $details = $portofolio->with('details')->whereHas('details', function($query) use($id) {
-            $query->where('portofolio_id', $id);
-        })->get();
+        // $portofolio = $portofolio->with('details')->whereHas('details', function($query) use($id) {
+        //     $query->where('portofolio_id', $id);
+        // })->get();
 
-        return view('details-porto', compact('portofolio', 'details'));
+        return view('details-porto', compact('portofolio'));
     }
 
     public function curriculum_vitae()

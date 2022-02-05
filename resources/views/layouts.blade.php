@@ -16,10 +16,10 @@
 </head>
 <body>
 
-    <body class="bg-cyan-100 pt-10">
+    <body class="bg-cyan-100 dark:bg-black pt-10">
         <div class="flex h-auto justify-center ">
-            <div class="bg-white shadow-xl rounded-2xl w-11/12 px-20 pt-6 pb-6 mb-4">
-                <div class="bg-white mb-6 pb-4">
+            <div class="bg-white dark:bg-gray-700 shadow-xl rounded-2xl w-11/12 px-20 pt-6 pb-6 mb-4">
+                <div class="bg-white mb-6 pb-4 dark:bg-gray-700">
                     <div class="max-w-7xl mx-auto px-4 sm:px-6">
                         <div class="flex justify-between items-center border-gray-100 py-6 md:justify-start md:space-x-10">
                             <div class="flex justify-start lg:w-0 lg:flex-1">
@@ -31,11 +31,11 @@
                                     <div class="flex justify-between">
                                         
                                         <div class="px-10">
-                                            <a href="{{ route('my-projects') }}" class="text-gray-500 hover:bg-gray-200 hover:rounded-md hover:py-4 hover:px-4 hover:transition hover:duration-200 hover:ease-in-out hover:text-cyan-500 font-poppins items-center">PORTOFOLIO</a>
+                                            <a href="{{ route('my-projects') }}" class="text-gray-500 dark:text-white hover:bg-gray-200 hover:rounded-md hover:py-4 hover:px-4 hover:transition hover:duration-200 hover:ease-in-out hover:text-cyan-500 font-poppins items-center">PORTOFOLIO</a>
                                         </div>
         
                                         <div class="">
-                                            <a href="{{ route('my-cv') }}" class="text-gray-500 hover:bg-gray-200 hover:rounded-md hover:py-4 hover:px-4 hover:transition hover:duration-200 hover:ease-in-out hover:text-cyan-500 font-poppins items-center">CURRICULLUM VITAE</a>
+                                            <a href="{{ route('my-cv') }}" class="text-gray-500 dark:text-white hover:bg-gray-200 hover:rounded-md hover:py-4 hover:px-4 hover:transition hover:duration-200 hover:ease-in-out hover:text-cyan-500 font-poppins items-center">CURRICULLUM VITAE</a>
                                         </div>
                                             
                                     </div>
