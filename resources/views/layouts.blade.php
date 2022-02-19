@@ -14,11 +14,10 @@
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
     @livewireStyles
 </head>
-<body>
 
     <body class="bg-cyan-100 dark:bg-black pt-10">
         <div class="flex h-auto justify-center ">
-            <div class="bg-white dark:bg-gray-700 shadow-xl rounded-2xl w-11/12 px-20 pt-6 pb-6 mb-4">
+            <div class="bg-white dark:bg-gray-700 shadow-xl rounded-2xl w-11/12 px-4 md:px-20 pt-6 pb-6 mb-4">
                 <div class="bg-white mb-6 pb-4 dark:bg-gray-700">
                     <div class="max-w-7xl mx-auto px-4 sm:px-6">
                         <div class="flex justify-between items-center border-gray-100 py-6 md:justify-start md:space-x-10">
@@ -27,8 +26,9 @@
                                     <img class="h-8 w-auto sm:h-10" src="{{ asset('assets/content/icon.png') }}" alt="">
                                 </a>
         
-                                <div class="px-20 flex items-center">
-                                    <div class="flex justify-between">
+                                {{-- desktop menu --}}
+                                <div class="hidden md:px-20 md:flex md:items-center">
+                                    <div class="md:flex md:justify-between">
                                         
                                         <div class="px-10">
                                             <a href="{{ route('my-projects') }}" class="text-gray-500 dark:text-white hover:bg-gray-200 hover:rounded-md hover:py-4 hover:px-4 hover:transition hover:duration-200 hover:ease-in-out hover:text-cyan-500 font-poppins items-center">PORTOFOLIO</a>
@@ -40,6 +40,24 @@
                                             
                                     </div>
                                 </div>
+                                {{-- end desktop menu --}}
+
+
+                                {{-- mobile menu --}}
+                                <div class="md:hidden px-4 py-2 flex items-start">
+                                    <div class="flex space-x-2">
+
+                                        <div class="px-2">
+                                            <a href="{{ route('my-projects') }}" class="hover:bg-gray-50 px-1 py-1 hover:rounded-md hover:text-cyan-500 text-xs font-poppins font-extrabold text-gray-500 dark:text-white">PORTOFOLIO</a>
+                                        </div>
+
+                                        <div class="px-2">
+                                            <a href="{{ route('my-cv') }}" class="hover:bg-gray-50 px-1 py-1 hover:rounded-md hover:text-cyan-500 text-xs font-poppins font-extrabold text-gray-500 dark:text-white">CURRICULUM VITAE</a>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                {{-- end mobile menu --}}
         
         
                             </div>
@@ -47,6 +65,7 @@
                         </div>
                     </div>
                 </div>
+
 
                 {{-- content --}}
                 @yield('container')
@@ -57,8 +76,6 @@
             <!-- End -->
         </div>
         @livewireScripts
-    </body>
-
 </body>
 
 </html>
